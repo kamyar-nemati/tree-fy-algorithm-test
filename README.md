@@ -12,6 +12,8 @@ User may create new Tasks. All tasks have ID, ParentID, Name, and Data as their 
 ## Prototype Features
 Tasks are listed in a customized UI-Grid table. The table supports pagination, external search, and external sort. There are links for each task that triggers certain actions such as switch status, rename, and change parent task. All tasks are demonstrated in hierarchical representation as well.
 
+![Hierarchical Representation](https://user-images.githubusercontent.com/29518086/29768228-13670ab6-8c18-11e7-9ab3-f34e1272a966.png "Hierarchical Representation")
+
 ## Database
 You need to have PostgreSQL installed. The prototype will create the required table. However, you need to have a database and an authorized role to login.
 
