@@ -13,6 +13,6 @@ Tasks are listed in a customized UI-Grid table. The table supports pagination, e
 You need to have PostgreSQL installed. The prototype will create the required table. However, you need to have a database and an authorized role to login.
 
 Instructions below might be useful.
-`CREATE DATABASE task_tree ;`
-`CREATE ROLE taskadmin WITH PASSWORD 'abc123' ;`
-`ALTER ROLE taskadmin WITH LOGIN ;`
+* `CREATE DATABASE task_tree ;`
+* `CREATE ROLE taskadmin WITH PASSWORD 'abc123' ;`
+* `ALTER ROLE taskadmin WITH LOGIN ;`
