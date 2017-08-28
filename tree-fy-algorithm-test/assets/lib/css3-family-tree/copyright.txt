@@ -1,0 +1,3 @@
+
+The "css3-family-tree" code has been adopted from:
+github.com/sikrew/css3-family-tree
