@@ -98,7 +98,9 @@ $db['default'] = array(
 );
 
 /**
- * create database task_tree ;
- * create role taskadmin with password 'abc123' ;
- * alter role taskadmin with login ;
+ * Instructions to create database and role:
+ * 
+ * 1. CREATE DATABASE task_tree ;
+ * 2. CREATE ROLE taskadmin WITH PASSWORD 'abc123' ;
+ * 3. ALTER ROLE taskadmin WITH LOGIN ;
  */
