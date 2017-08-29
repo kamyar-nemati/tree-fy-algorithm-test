@@ -5,6 +5,7 @@ An AJAX-based web application for testing the repo 'tree-fy-algorithm'. This pro
 
 ## Dependency
 This repository depends on: __tree-fy-algorithm__
+
 The prototype expects to find _Node.php_ and _Tree.php_ classes at 'application/core/tree-fy-algorithm/'.
 
 ## Requirements Overview
