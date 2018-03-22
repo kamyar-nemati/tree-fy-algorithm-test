@@ -12,7 +12,7 @@
 
 require_once 'application/libraries/REST_Controller.php';
 
-Class Utils extends REST_Controller {
+Class Utils extends Restserver\Libraries\REST_Controller {
     
     /**
      * 

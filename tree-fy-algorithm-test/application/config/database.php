@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |				'ssl_key'    - Path to the private key file
 |				'ssl_cert'   - Path to the public key certificate file
 |				'ssl_ca'     - Path to the certificate authority file
-|				'ssl_capath' - Path to a directory containing trusted CA certificats in PEM format
+|				'ssl_capath' - Path to a directory containing trusted CA certificates in PEM format
 |				'ssl_cipher' - List of *allowed* ciphers to be used for the encryption, separated by colons (':')
 |				'ssl_verify' - TRUE/FALSE; Whether verify the server certificate or not ('mysqli' only)
 |
@@ -73,13 +73,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+/**
+ * Instructions to create database and role:
+ * 
+ * 1. CREATE DATABASE task_tree ;
+ * 2. CREATE ROLE taskadmin WITH PASSWORD 'abc123' ;
+ * 3. ALTER ROLE taskadmin WITH LOGIN ;
+ */
 $db['default'] = array(
 	'dsn'	=> 'pgsql:host=localhost;port=5432;dbname=task_tree',
 	'hostname' => 'localhost',
 	'username' => 'taskadmin',
 	'password' => 'abc123',
 	'database' => 'task_tree',
-//	'dbdriver' => 'mysqli',
+	'port' => '5432',
 	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,13 +101,4 @@ $db['default'] = array(
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE,
-        'port' => '5432'
 );
-
-/**
- * Instructions to create database and role:
- * 
- * 1. CREATE DATABASE task_tree ;
- * 2. CREATE ROLE taskadmin WITH PASSWORD 'abc123' ;
- * 3. ALTER ROLE taskadmin WITH LOGIN ;
- */
