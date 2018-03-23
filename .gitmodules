@@ -1,3 +1,0 @@
-[submodule "tree-fy-algorithm"]
-	path = tree-fy-algorithm-test/application/core/tree-fy-algorithm
-	url = https://github.com/kamyar-nemati/tree-fy-algorithm.git
